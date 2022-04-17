@@ -47,7 +47,7 @@ const SingleProductPage = () => {
                     {product.countInStock > 0 ? (
                       <span className="success">{product.countInStock} item in stock </span>
                     ) : (
-                      <span className="error"> Unavailable</span>
+                      <span className="danger"> Unavailable</span>
                     )}
                   </div>
                 </div>
