@@ -5,11 +5,11 @@ const app = express();
 
 
 
-app.get("/api/products:id", (req, res)=>{
+app.get("/api/products", (req, res)=>{
     res.send(data.product);
 })
 
-app.get("/api/products", (req, res)=>{
+app.get("/api/products/:id", (req, res)=>{
     const product = data.product.find((x)=> x._id ===req.params.id);
     if(product){
     res.send(data.product);
